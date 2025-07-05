@@ -1,16 +1,16 @@
 // index.js – Professional Temp-Mail Bot (CommonJS)
-// Built by X NiL – Replit-ready & beginner friendly
+// Built by X NiL 
 
 const TelegramBot = require('node-telegram-bot-api');
-const axios       = require('axios');
-const chalk       = require('chalk'); // v4 – compatible with require()
-const dayjs       = require('dayjs');
+const axios = require('axios');
+const chalk = require('chalk'); // v4 – compatible with require()
+const dayjs = require('dayjs');
 
-const BOT_TOKEN = '8028356170:AAEWx-JRx7Hh8YddtBpWJFxw99LPW6NUrX0';
+const BOT_TOKEN = 'your_bot_token';
 if (!BOT_TOKEN) throw new Error('🚨 BOT_TOKEN is missing!');
 
 const bot   = new TelegramBot(BOT_TOKEN, { polling: true });
-const users = new Map(); // Store user email data: chatId → { email, token, lastId }
+const users = new Map();
 
 const esc = (s = '') =>
   s.replace(/&/g, '&amp;')
