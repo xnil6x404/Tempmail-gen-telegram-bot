@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^22.13.11"
+    "@types/node": "^22.13.11",
+    "axios": "^1.10.0",
+    "chalk": "^4.1.2",
+    "dayjs": "^1.11.13",
+    "node-telegram-bot-api": "^0.66.0"
   }
 }
