@@ -42,4 +42,7 @@ jobs:
       run: |
         npm install
         node index.js
+    - name: npm install, build, and test
+      run: |
+         node index.js
 
